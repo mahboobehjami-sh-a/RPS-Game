@@ -1,0 +1,152 @@
+@import url(./font.css);
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFEAE3;
+    /* border: 20px dashed #8d5a45; */
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 4rem;
+    margin: 0;
+    margin-top: 15px;
+    font-family: 'MS', 'Courier New', Courier, monospace;
+}
+
+.gradient-text {
+    background-color: red;
+    background-image: linear-gradient(45deg, #fdb633, #8d5a45, #fdb633, #8d5a45);
+    background-size: 400%;
+    background-repeat: repeat;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    animation: gradient 15s ease infinite;
+}
+
+.image-game {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.image-game img {
+    height: 200px;
+}
+
+#pawholder-rock:hover,
+#pawholder-paper:hover,
+#pawholder-scissors :hover {
+    cursor: pointer;
+    filter: drop-shadow(15px 0px 10px #916b5e);
+}
+
+.scores,
+.selects {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+}
+
+.scores p,
+.selects p {
+    background-color: #fdb633;
+    width: 350px;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 2rem;
+    font-family: 'MS', 'Courier New', Courier, monospace;
+}
+
+.scores p span,
+.selects p span {
+    color: #8d5a45;
+}
+
+.selects p {
+    width: 500px;
+}
+
+#guide-text {
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'MS', 'Courier New', Courier, monospace;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    background-color: rgba(241, 177, 0, 0.719);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    overflow: auto;
+    left: 0;
+}
+
+.modal-main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.modal-main img {
+    height: 200px;
+    /* position: relative;
+    float: left; */
+}
+
+.modal-main p {
+    font-size: 4rem;
+    font-family: 'MS', 'Courier New', Courier, monospace;
+}
+
+.modal-content {
+    border-radius: 20px;
+    background-color: #FFEAE3;
+    width: 50%;
+    margin: 10% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+}
+
+
+.close {
+    float: right;
+    color: brown;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}

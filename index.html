@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="ShowModal" class="modal">
+        <div class="modal-content">
+            <span id="close" class="close">&times;</span>
+            <div class="modal-main">
+                <img src="./images/happy.png" id="status"/>
+                <p id="Winner">Time is up</p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <h1 class="gradient-text">RPS Game</h1>
+
+
+    <div class="scores">
+        <p>
+            Time : <span id="timer">0</span>
+        </p>
+        <p>
+            Your Score : <span id="userScore">0</span>
+        </p>
+        <p>
+            Computer Score : <span id="systemScore">0</span>
+        </p>
+    </div>
+    <p id="guide-text">
+        Select Your Choose :
+    </p>
+    <div class="image-game">
+        <div id="pawholder-rock"><img src="./images/Asset 1.png" id="rock"></div>
+        <div id="pawholder-paper"><img src="./images/Asset 2.png" id="paper"></div>
+        <div id="pawholder-scissors"><img src="./images/Asset 3.png" id="scissors"></div>
+    </div>
+    <div class="selects">
+        <p>
+            Your Choose : <span id="userSelection">-</span>
+        </p>
+        <p>
+            Computer Choose : <span id="systemSelection">-</span>
+        </p>
+    </div>
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
